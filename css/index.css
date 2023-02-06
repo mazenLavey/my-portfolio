@@ -263,6 +263,10 @@ a {
     transform: rotateY(180deg);
 }
 
+.event-disactive {
+    pointer-events: none;
+}
+
 .project__card__img:hover {
     transform: rotateY(180deg) !important;
 }
