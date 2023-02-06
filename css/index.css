@@ -279,11 +279,6 @@ a {
     }
 }
 
-.project__card:last-of-type .project__card__info,
-.project__card:last-of-type img {
-    transition-delay: 0.5s;
-}
-
 .project__card__info > h3,
 .project__card__info > h2 {
     font-size: 2rem;
