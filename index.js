@@ -8,10 +8,11 @@ window.addEventListener('scroll', ()=>{
     let h = document.getElementById('projects').offsetTop / 2;
     if (window.scrollY >= h) {
         projectCards.forEach((card)=>{card.style = 'transform: translateX(0); opacity: 1;';})           
-        projectImgs.forEach((img)=>{img.style = 'transform: translateX(0); opacity: 1;';})
+        projectImgs.forEach((img)=>{img.style = 'transform: translateX(0); opacity: 1; pointer-events: none;';})
         if (times === 0) {
             setTimeout(()=>{
-                projectImgs.forEach((img)=>{img.style = 'animation: filpCard 2s 1 alternate none; transform: translateX(0); opacity: 1;';})
+                projectImgs.forEach((img)=>{img.style = 'animation: filpCard 2s 1 alternate none; transform: translateX(0); opacity: 1';})
+                setTimeout(()=>{img.style = 'pointer-events: auto;';}, 2000);
             }, 2000);           
             times++;
         }
