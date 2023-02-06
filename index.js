@@ -71,11 +71,11 @@ const translation = {
         'hello': 'Hello !',
         'brief': 'Mazen Al-Madhage / Front-end Developer',
         'someProjects': 'some projects',
-        'gamingWorld': "Gaming World is a simulation for website where you can find the latest news, updates, future events and releases about games. <br> <br>In this website, I wanted to demonstrate techniques like modern sliders, swap effects for mobile devices, timers and counters via using only javascript. <br> <br>Now it's not a multi page website. I would rather build it using React.js to guarantee a fast content downloading and less requests on the server. <br> <br>The website is fully responsive. FCP and LCP are less than 1 second.",
+        'gamingWorld': "Gaming World is a template for website where you can find the latest news, updates, future events and releases about games. <br> <br>In this website, I wanted to demonstrate techniques like modern sliders, swap effects for mobile devices, timers and counters via using only javascript. <br> <br>Now it's not a multi-page website. I would rather build it using React.js to guarantee a fast content downloading and less requests on the server. <br> <br>The website is fully responsive. FCP and LCP are less than 1 second.",
         'tools':'Tools:',
         'viewCode':'view code <i class="fa-brands fa-github"></i>',
         'openSite':'open site',
-        'luckyShrub': 'This project was one of my assignments for the Meta Front-End Developer Professional Certification on coursera. The goal of the project was to use what I had learned in HTML and CSS through the course. <br><br>This website is a simulation for any possible small business website, which shows a brief about the owners, the services provided, projects, and a way to contact them. <br><br>The website is fully responsive. FCP and LCP are less than 1 second.',
+        'luckyShrub': 'This project was one of my assignments for the Meta Front-End Developer Professional Certification on Coursera. The goal of the project was to use what I had learned in HTML and CSS through the course. <br><br>This website is a template for any possible small business website, which shows a brief about the owners, the services provided, projects, and a way to contact them. <br><br>The website is fully responsive. FCP and LCP are less than 1 second.',
         'contact': 'Connect with Me',
     },
     ru: {
@@ -83,13 +83,13 @@ const translation = {
         'resume': 'резюме',
         'hello': 'Здравствуйте !',
         'brief': 'Аль-Мадхаджи Мазен / Front-end разработчик',
-        'someProjects': 'несколько проектов',
-        'gamingWorld': 'Gaming World — это симулятор для веб-сайта, где вы можете найти последние новости, обновления, будущие события и выпуски об играх. <br> <br>На этом веб-сайте я хотел продемонстрировать такие методы, как современные слайдеры, эффекты подкачки для мобильных устройств, таймеры и счетчики, используя только javascript. <br> <br>Теперь это не многостраничный сайт. Я бы предпочел построить его с помощью React.js, чтобы гарантировать быструю загрузку контента и меньше запросов на сервер. <br> <br>Веб-сайт полностью адаптивен. FCP и LCP менее 1 секунды.',
+        'someProjects': 'проекты',
+        'gamingWorld': 'Gaming World — это шаблон для веб-сайта, где вы можете найти последние новости, обновления, будущие события и выпуски об играх. <br> <br>На этом веб-сайте я хотел продемонстрировать такие методы, как современные слайдеры, swap эффекты для мобильных устройств, таймеры и счетчики, используя только javascript. <br> <br>На данный момент это одностраничный сайт. Я бы предпочел усовершенствовать его с помощью React.js, чтобы гарантировать быструю загрузку контента и меньше запросов на сервер. <br> <br>Веб-сайт полностью адаптивен. FCP и LCP менее 1 секунды.',
         'tools':'Инструменты:',
         'viewCode':'посмотреть код <i class="fa-brands fa-github"></i>',
-        'openSite':'открыт сайт',
-        'luckyShrub': 'Этот проект был одним из моих заданий для сертификации Meta Front-End Developer Professional на Coursera. Цель проекта состояла в том, чтобы использовать то, что я изучил в HTML и CSS в ходе курса. <br><br>Этот веб-сайт является симуляцией любого возможного веб-сайта малого бизнеса, который показывает краткую информацию о владельцах, предоставляемых услугах, проектах и способах связаться с ними. <br><br>Веб-сайт полностью адаптивен. FCP и LCP менее 1 секунды.',
-        'contact': 'Свяжись со мной',
+        'openSite':'открыть сайт',
+        'luckyShrub': 'Этот проект был одним из моих заданий для прохождения курса Meta Front-End Developer Professional Certification на платформе Coursera. Цель проекта состояла в том, чтобы применить изученные мной в ходе обучения HTML и CSS. <br><br>Этот проект является шаблоном для веб-сайта малого бизнеса, который показывает краткую информацию о владельцах, предоставляемых услугах, проектах и способах связи с ними. <br><br>Веб-сайт полностью адаптивен. FCP и LCP менее 1 секунды.',
+        'contact': 'Свяжитесь со мной',
     }
 }
 
@@ -111,7 +111,7 @@ const changeTranslation = (choosedLang)=>{
 
     } else if (choosedLang === 'en') {
         window.localStorage.setItem('language', 'en');
-        language.textContent = 'Ру';
+        language.textContent = 'Рус';
         language.lang = 'ru';
         content.forEach((element)=>{
             element.innerHTML = translation.en[element.dataset.multilang];  
