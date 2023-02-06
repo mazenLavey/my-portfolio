@@ -1,2 +1,2 @@
-# my-portfolio
-Mazen Al-Madhage / Front-end Developer
+# My Portfolio
+Open via this link: 
