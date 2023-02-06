@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for Mazen Al-Madhage portfolio, a Front-end developer. Skilled with HTML, CSS and JavaScript.">
+    <meta name="author" content="Mazen Al-Madhage">
+    <link rel="icon" href="images/briefcase.png">
+    <title>Mazen Al-Madhage | Front-end developer</title>
+
+    <!-- Ogp Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Mazen Al-Madhage | Front-end developer">
+    <meta property="og:description" content="Website for Mazen Al-Madhage portfolio, a Front-end developer. Skilled with HTML, CSS and JavaScript.">
+    <meta property="og:image" content="">
+
+    <!-- Ogp Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Mazen Al-Madhage | Front-end developer">
+    <meta property="twitter:description" content="Website for Mazen Al-Madhage portfolio, a Front-end developer. Skilled with HTML, CSS and JavaScript.">
+    <meta property="twitter:image" content="">
+
+    <!-- styling -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper container">
+            <a class="header__logo" href="#">MA</a>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#projects" title="Go to Projects Section" data-multilang="projects">projects</a></li>
+                    <li><a href="https://rostov.hh.ru/resume/87a2e10fff0baf9cf20039ed1f49394a7a4137" target="_blank" title="Go to Mazen's CV on hh" data-multilang="resume">resume</a></li>
+                    <li id="language" lang="ru">Ру</li>
+                    <li id="dark_mode" title="Light/Dark Mode"><i class="fa-solid fa-moon"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="landing">
+        <div class="container">
+            <div>
+                <h1 data-multilang="hello">Hello !</h1>
+            </div>
+            <p data-multilang="brief">Mazen Al-Madhage / Front-end Developer</p>
+        </div>
+        <a class="landing__arrow" href="#projects">
+            <p data-multilang="someProjects">some projects</p>
+            <i class="fa-solid fa-angles-down"></i>
+        </a>
+    </div>
+
+    <main>
+        <section class="projects container" id="projects">
+            <div class="project__card">
+                <div class="project__card__img">
+                    <img src="images/gaming_world.jpg" alt="gaming world" width="850" height="510" class="front-face">
+                    <img src="images/gaming_world_sccore.jpg" alt="test's sccore" width="850" height="510" class="back-face">
+                </div>
+                <article class="project__card__info">
+                    <h2>gaming world</h2>
+                    <p data-multilang="gamingWorld">Gaming World is a simulation for website where you can find the latest news, updates, future events and releases about games. <br> <br>In this website, I wanted to demonstrate techniques like modern sliders, swap effects for mobile devices, timers and counters via using only javascript. <br> <br>Now it's not a multi page website. I would rather build it using React.js to guarantee a fast content downloading and less requests on the server. <br> <br>The website is fully responsive. FCP and LCP are less than 1 second.</p>
+                    <h3 data-multilang="tools">Tools:</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i>HTML</li>
+                        <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                        <li><i class="fa-brands fa-square-js"></i>JavaScript</li>
+                    </ul>
+                    <div class="projects__card__links">
+                        <a href="https://github.com/mazenLavey/gaming-world" target="_blank" class="project__btn" data-multilang="viewCode">view code <i class="fa-brands fa-github"></i></a> 
+                        <a href="https://mazenlavey.github.io/gaming-world/" target="_blank" class="project__btn" data-multilang="openSite">open site</a> 
+                    </div>
+                </article>
+            </div>
+            <div class="project__card">
+                <div class="project__card__img">
+                    <img src="images/lucky_shrub.jpg" alt="lucky shrub" width="850" height="510" class="front-face">
+                    <img src="images/lucky_shrub_sccore.jpg" alt="test's sccore" width="850" height="510" class="back-face">
+                </div>
+                <article class="project__card__info">
+                    <h2>Lucky Shrub</h2>
+                    <p data-multilang="luckyShrub">This project was one of my assignments for the Meta Front-End Developer Professional Certification on coursera. The goal of the project was to use what I had learned in HTML and CSS through the course. <br><br>This website is a simulation for any possible small business website, which shows a brief about the owners, the services provided, projects, and a way to contact them. <br><br>The website is fully responsive. FCP and LCP are less than 1 second.</p>
+                    <h3 data-multilang="tools">Tools:</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i>HTML</li>
+                        <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                        <li><i class="fa-brands fa-square-js"></i>JavaScript</li>
+                    </ul>
+                    <div class="projects__card__links">
+                        <a href="https://github.com/mazenLavey/lucky-shrub" target="_blank" class="project__btn" data-multilang="viewCode">view code <i class="fa-brands fa-github"></i></a> 
+                        <a href="https://mazenlavey.github.io/lucky-shrub/" target="_blank" class="project__btn" data-multilang="openSite">open site</a>  
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-multilang="contact">Connect with Me</p>
+            <span>mazen.fp@gmail.com</span>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
