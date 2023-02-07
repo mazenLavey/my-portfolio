@@ -123,11 +123,20 @@ const changeTranslation = (choosedLang)=>{
 //  check when window on load
 
 window.onload = ()=>{
+    // check dark mode
     if (window.localStorage.getItem('dark_mode') === 'true') {
         changeMode(true);
     } else {
         changeMode(false);
     }
 
+    // check locak language for first time 
+    if (!window.localStorage.getItem('language')) {
+        let locaolLang = navigator.language.includes('ru');
+        locaolLang ? window.localStorage.setItem('language', 'ru'): null;
+    }
+
+    // check language on every page load
     changeTranslation(window.localStorage.getItem('language'));
+
 }
